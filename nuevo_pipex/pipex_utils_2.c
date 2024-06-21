@@ -6,7 +6,7 @@
 /*   By: loigonza <loigonza@42.barcel>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/17 13:15:56 by loigonza          #+#    #+#             */
-/*   Updated: 2024/06/18 19:01:56 by loigonza         ###   ########.fr       */
+/*   Updated: 2024/06/21 18:29:44 by loigonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,5 +101,11 @@ int	open_file(char *outfile, char *infile)
 	int fd_i;
 	int fd_o;
 
-
+	if (fd_i = open(infile, O_RDONLY, 0777) == -1)
+		//mensaje error
+	if (fd_o = open(outfile, O_WRONLY | O_CREAT | O_TRUNC, 0777) == -1)
+		//MENSAJE ERROR
+	if (access(infile, R_OK))
+		//permiso denegado
+		
 }
